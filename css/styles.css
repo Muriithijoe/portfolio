@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) ), url(../img/lapikali.jpg) fixed;
+    background-size: cover;
+}
+
+.main{
+  text-align: center;
+}
+
+.main h1{
+  margin-top: 20%;
+  color: white;
+  font-family: 'Bungee', cursive;
+}
+
+.main h4{
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
