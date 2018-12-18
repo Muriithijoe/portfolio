@@ -10,15 +10,85 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee|Fira+Sans|Righteous" rel="stylesheet">
   </head>
   <body>
+      <div class="wrapper">
+          <!-- Sidebar -->
+          <nav id="sidebar">
+      
+              <div id="dismiss">
+                  <i class="fas fa-arrow-left"></i>
+              </div>
+      
+              <div class="sidebar-header">
+                  <h3>Bootstrap Sidebar</h3>
+              </div>
+      
+              <ul class="list-unstyled components">
+                  <p>Dummy Heading</p>
+                  <li class="active">
+                      <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                      <ul class="collapse list-unstyled" id="homeSubmenu">
+                          <li>
+                              <a href="#">Home 1</a>
+                          </li>
+                          <li>
+                              <a href="#">Home 2</a>
+                          </li>
+                          <li>
+                              <a href="#">Home 3</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">About</a>
+                      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                      <ul class="collapse list-unstyled" id="pageSubmenu">
+                          <li>
+                              <a href="#">Page 1</a>
+                          </li>
+                          <li>
+                              <a href="#">Page 2</a>
+                          </li>
+                          <li>
+                              <a href="#">Page 3</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">Portfolio</a>
+                  </li>
+                  <li>
+                      <a href="#">Contact</a>
+                  </li>
+              </ul>
+          </nav>
+      
+          <!-- Page Content -->
+          <div id="content">
+      
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
+      
+                      <button type="button" id="sidebarCollapse" class="btn btn-info">
+                          <i class="fas fa-align-left"></i>
+                          <span>Toggle Sidebar</span>
+                      </button>
+                  </div>
+              </nav>
+          </div>
+          <!-- Dark Overlay element -->
+          <div class="overlay"></div>
+      </div>
     <div class="container">
       <div class = "main">
         <h1>Hello I'm Joe Muriithi</h1>
         <h4>I am a fullstack developer in Python and Django</h4>
         <button id="nextbio" onclick="next()" class="btn">About me</button>
       </div>
-      <!-- <div class="bio">
-        <img src="img/madara.jpg" alt="dp">
-      </div> -->
+      <div class="bio">
+        <div class="panel panel-warning">
+            <img src="img/madara.jpg" alt="dp">
+        </div>
+      </div>
       <!-- <div class="skills">
         <div class="row">
           <div class="column">
@@ -37,9 +107,9 @@
             <img src="img/javascript.png" alt="Python" style="width:40%">
             <h2>Javascript</h2>
           </div>
-       </div>
+       </div> -->
 
-      </div> -->
+      </div>
 
     </div>
   </body>
