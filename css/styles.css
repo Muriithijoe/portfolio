@@ -1,6 +1,10 @@
-body{
+.main{
     background: linear-gradient( rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) ), url(../img/lapikali.jpg) fixed;
     background-size: cover;
+    height:550px;
+    margin:0px;
+    padding:0px;
+    width:100%;
 }
 
 .main{
@@ -8,9 +12,10 @@ body{
 }
 
 .main h1{
-  margin-top: 20%;
+  /* margin-top: 20%; */
   color: white;
   font-family: 'Bungee', cursive;
+  margin-top: 10px;
 }
 
 .main h4{
@@ -18,50 +23,47 @@ body{
   font-family: 'Fira Sans', sans-serif;
 }
 
-img {
-  border-radius: 50%;
-}
-
-.wrapper {
-  display: block;
-}
-
-#sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  /* top layer */
-  z-index: 9999;
-}
-
-.overlay {
+/* .skills{
   display: none;
-  position: fixed;
-  /* full screen */
-  width: 100vw;
-  height: 100vh;
-  /* transparent black */
-  background: rgba(0, 0, 0, 0.7);
-  /* middle layer, i.e. appears below the sidebar */
-  z-index: 998;
-  opacity: 0;
-  /* animate the transition */
-  transition: all 0.5s ease-in-out;
-}
-/* display .overlay when it has the .active class */
-.overlay.active {
-  display: block;
-  opacity: 1;
+} */
+
+#me {
+  text-align: center;
 }
 
-#dismiss {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  /* top right corner of the sidebar */
-  top: 10px;
-  right: 10px;
+#me h3 {
+  font-size: 60px;
+ font-family: 'Josefin Sans', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#me p {
+  font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+}
+
+#end {
+  height: 60px;
+  padding: 5px;
+  background-color: rgba(0,0,0, 0.1);
+}
+
+#name {
+  float: left;
+  padding-left: 100px;
+  padding-top: 22px;
+  font-family: 'Anaheim', sans-serif;
+  display: inline-block;
+}
+
+#social {
+  float: right;
+  padding-right: 200px;
+  padding-top: 15px;
+
+}
+
+#social img {
+  padding-left: 10px;
 }
