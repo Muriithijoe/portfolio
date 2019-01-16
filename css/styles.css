@@ -1,5 +1,8 @@
+body{
+  background-color: gainsboro
+}
 .main{
-    background: linear-gradient( rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) ), url(../img/lapikali.jpg) fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) ), url(../img/gazeti.jpeg) fixed;
     background-size: cover;
     height:550px;
     margin:0px;
@@ -9,13 +12,13 @@
 
 .main{
   text-align: center;
+
 }
 
 .main h1{
   /* margin-top: 20%; */
   color: white;
   font-family: 'Bungee', cursive;
-  margin-top: 10px;
 }
 
 .main h4{
@@ -33,7 +36,7 @@
 
 #me h3 {
   font-size: 60px;
- font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -67,3 +70,49 @@
 #social img {
   padding-left: 10px;
 }
+
+#cont1 {
+  position: relative;
+  width: 100%;
+ }
+ 
+ .image {
+  display: block;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+ }
+ 
+ .overlay {
+  position: absolute;
+  top: 0.5px;
+  bottom: 0;
+  left: 15.2px;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lightgrey;
+  border-radius: 50%;
+ }
+ 
+ #cont1:hover .overlay {
+  opacity: 1.5;
+ }
+ 
+ .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+ }
+ 
+ #jumbo1{
+  background-image: url("../img/polar_bear_by_fenguin-minimalist.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+ }
