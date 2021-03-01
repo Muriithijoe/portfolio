@@ -75,14 +75,14 @@ body{
   position: relative;
   width: 100%;
  }
- 
+
  .image {
   display: block;
   width: 400px;
   height: 400px;
   border-radius: 50%;
  }
- 
+
  .overlay {
   position: absolute;
   top: 0.5px;
@@ -96,11 +96,11 @@ body{
   background-color: lightgrey;
   border-radius: 50%;
  }
- 
+
  #cont1:hover .overlay {
   opacity: 1.5;
  }
- 
+
  .text {
   color: white;
   font-size: 20px;
@@ -110,9 +110,30 @@ body{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
  }
- 
+
  #jumbo1{
   background-image: url("../img/polar_bear_by_fenguin-minimalist.jpg");
   background-position: center;
   background-repeat: no-repeat;
  }
+
+   /* Make sure that padding behaves as expected */
+  * {box-sizing: border-box}
+
+  /* Container for skill bars */
+  .container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+
+  .html {width: 90%; background-color: #4CAF50;} /* Green */
+  .css {width: 80%; background-color: #2196F3;} /* Blue */
+  .py {width: 65%; background-color: #f44336;} /* Red */
+  .js {width: 60%; background-color: #808080;} /* Dark Grey */
